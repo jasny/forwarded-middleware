@@ -20,10 +20,10 @@
         "psr/http-server-middleware": "^1.0"
     },
     "require-dev": {
-        "guzzlehttp/guzzle": "^6.3",
-        "jasny/php-code-quality": "^2.5",
-        "php-http/client-common": "^2.0",
-        "php-http/mock-client": "^1.3"
+        "jasny/php-code-quality": "^2.5"
+    },
+    "suggest": {
+        "wikimedia/ip-set": "Check if IP is in a trusted CIDR block"
     },
     "autoload": {
         "psr-4": {
