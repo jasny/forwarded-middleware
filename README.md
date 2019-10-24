@@ -54,9 +54,11 @@ of the `for` directive from the previous trusted forward.
 >
 > This results in the following calls
 > 
->     fn("208.80.154.8", ['for' => "10.64.0.23"]);  // true
->     fn("10.64.0.23", ['for' => "32.5.86.102"]);   // true
->     fn("32.5.86.102", ['for' => "92.53.34.1"]);   // false
+> ```php
+> fn("208.80.154.8", ['for' => "10.64.0.23"]);  // true
+> fn("10.64.0.23", ['for' => "32.5.86.102"]);   // true
+> fn("32.5.86.102", ['for' => "92.53.34.1"]);   // false
+> ```
 > 
 > The `client_id` is set to `"32.5.86.102"`. Note that the `for=75.84.3.2` forward isn't considered.
 
