@@ -66,7 +66,7 @@ It's not required to trust based on IP. Alternatively you can check if the proxy
 
 ```php
 $middleware = new Forwarded\Middleware(function (string $ip, array $forward) {
-    return $forward === getenv('PROXY_SECRET');
+    return $forward['secret'] === getenv('PROXY_SECRET');
 });
 ```
 
@@ -167,4 +167,4 @@ $relay = $relayBuilder->newInstance([
 $response = $relay($request, $baseResponse);
 ```
 
-`CompatMiddleware` as has an `asDoublePass()` method.
+`CompatMiddleware` also has an `asDoublePass()` method.
